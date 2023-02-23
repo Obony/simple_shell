@@ -43,6 +43,7 @@ extern char **environ;
  * @str: a string
  * @next: points to the next node
  */
+
 typedef struct liststr
 {
 	int num;
@@ -72,6 +73,7 @@ typedef struct liststr
  * @readfd: the fd from which to read line input
  * @histcount: the history line number count
  */
+
 typedef struct passinfo
 {
 	char *arg;
@@ -104,6 +106,7 @@ typedef struct passinfo
  * @type: the builtin command flag
  * @func: the function
  */
+
 typedef struct builtin
 {
 	char *type;
