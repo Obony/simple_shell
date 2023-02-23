@@ -8,6 +8,7 @@
  *
  * Return: 1 if chain delimeter, 0 otherwise
  */
+
 int is_chain(info_t *info, char *buf, size_t *p)
 {
 	size_t j = *p;
@@ -45,6 +46,7 @@ int is_chain(info_t *info, char *buf, size_t *p)
  *
  * Return: Void
  */
+
 void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
 	size_t j = *p;
@@ -75,6 +77,7 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
  *
  * Return: 1 if replaced, 0 otherwise
  */
+
 int replace_alias(info_t *info)
 {
 	int i;
@@ -104,6 +107,7 @@ int replace_alias(info_t *info)
  *
  * Return: 1 if replaced, 0 otherwise
  */
+
 int replace_vars(info_t *info)
 {
 	int i = 0;
@@ -146,6 +150,7 @@ int replace_vars(info_t *info)
  *
  * Return: 1 if replaced, 0 otherwise
  */
+
 int replace_string(char **old, char *new)
 {
 	free(*old);
